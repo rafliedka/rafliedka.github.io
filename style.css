@@ -15,11 +15,15 @@ div .navbar-right{
 }
 
 .page-header{
-    padding-top: 75px;
+    padding-top: 50px;
 }
 
 h1{
     text-align: center;
+}
+
+p{
+    font-size: larger;
 }
 
 fieldset{
