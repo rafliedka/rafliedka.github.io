@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Seminar Tugas Akhir</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- header -->
+    <div class="page-header">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="index-user.html">Home</a></li>
+                        <li><a href="halaman-jadwal.html">Jadwal</a></li>
+                        <li><a href="halaman-daftar-TA.html">Daftar Seminar</a></li>
+                        <li><a href="">Berita</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <a class="btn btn-default navbar-btn" href="login.html" role="button">Logout</a>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <a class="btn btn-default navbar-btn" href="" role="button">Profil</a>
+                    </ul>
+                </div>
+                <!-- breadcrumb -->
+                <div>
+                    <ol class="breadcrumb">
+                        <li><a href="halaman-daftar-TA.html">Daftar-TA</a></li>
+                    </ol>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Sistem Informasi Tugas Akhir - SISTA</h1>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- desc -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>"Pendaftaran Seminar berlaku untuk mahasiswa yang telah mendapat persetujuan dari Pembimbing TA"</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- form -->
+    <div class="container">
+        <fieldset class="scheduler-border" id="daftarTA">
+            <legend class="scheduler-border"> Form Daftar Seminar TA</legend>
+            <form action="">
+                <div class="form-group">
+                
+                    <!-- left side -->
+                    <div class="row col-sm-6">
+                        
+                        <!-- Name -->
+                        <div class="row">
+                            <div class="col-sm-2 form-group">
+                                <label class="khusus-label">Nama:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="nama" class="form-control"size="50"id="name" autocomplete="off" required>
+                            </div>
+                        </div>
+    
+                        <!-- NIM -->
+                        <div class="row">
+                            <div class="col-sm-2 form-group">
+                                <label class="khusus-label">Nim:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="Nim" class="form-control"size="50" id="nim" autocomplete="off" required>
+                            </div>
+                        </div>
+    
+                        <!-- Prodi -->
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label class="khusus-prodi">Prodi:</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <select>
+                                    <option value='SI'>Sistem Informasi</option>
+                                    <option value='TI'>Teknik Informatika</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Tanggal Seminar -->
+                        <div class="row">
+                            <div class="col-sm-5 form-group">
+                                <label class="khusus-label">Tanggal Seminar :</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="date" class="form-control" id="date" required>
+                            </div>
+                        </div>
+    
+                        <!-- Jam Seminar -->
+                        <div class="row">
+                            <div class="col-sm-5 form-group">
+                                <label class="khusus-label">Jam Seminar :</label>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="time" class="form-control" id="jam" required>
+                            </div>
+                        </div>
+    
+                        <!-- Ruangan -->
+                        <div class="row">
+                            <div class="col-sm-2 form-group">
+                                <label class="khusus-label">Ruangan:</label>
+                            </div>
+                            <div class="col-sm-8">
+                                <input type="tel" class="form-control" id="date" autocomplete="off" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- right side -->
+                    <div class="row col-md-6" id="form">
+    
+                        <!-- Judul TA -->
+                        <div class="row">
+                            <div class="col-sm-2 form-group">
+                                <label class="khusus-label">Judul TA:</label>
+                            </div>
+                            <div class="col-sm-8 form-group">
+                                <textarea class="form-control" row="10" id="comment" required></textarea>
+                            </div>
+                        </div>
+    
+                        <!-- Seminar -->
+                        <div class="row">
+                            <div class="col-sm-4 form-group">
+                                <label class="khusus-label">Seminar :</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <select>
+                                    <option value='PR'>Proposal</option>
+                                    <option value='SK'>Skripsi</option>
+                                    <option value='BI'>Bisnis</option>
+                                    <option value='ME'>Menulis</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Pembimbing -->
+                        <div class="row">
+                            <div class="col-sm-4 form-group">
+                                <label class="khusus-label">Pembimbing:</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <select>
+                                    <option value='SI'>Sirojul Munir S.SI, M.KOM</option>
+                                    <option value='SL'>Slamet Santoso, S.kom</option>
+                                    <option value='AM'>Amalia Rahmah M.T</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Penguji 1 -->
+                        <div class="row">
+                            <div class="col-sm-4 form-group">
+                                <label class="khusus-label">Penguji 1:</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <select>
+                                    <option value='HE'>Henry Saptono, S.T, M.kom</option>
+                                    <option value='ED'>Edo Riansyah</option>
+                                    <option value='DR'>Dr.Lukman Rosyidi, M.T.,M.M</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <!-- Penguji 2 -->
+                        <div class="row">
+                            <div class="col-sm-4 form-group">
+                                <label class="khusus-label">Penguji 2:</label>
+                            </div>
+                            <div class="col-sm-2">
+                                <select>
+                                <option value='SY'>M. Syaiful Romadhon, S.kom</option>
+                                <option value='IH'>Ihsanul Fikri</option>
+                                <option value='AR'>Ardith Lutfiawan</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- button -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+      </div>
+    <!-- footer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-5">
+                <div class="footer">
+                    copy right by.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

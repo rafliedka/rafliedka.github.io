@@ -1,0 +1,51 @@
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+div .navbar-right{
+    padding-right: 15px;
+}
+
+.page-header{
+    padding-top: 75px;
+}
+
+h1{
+    text-align: center;
+}
+
+fieldset{
+    border: 1px solid black;
+}
+
+#jadwal{
+    text-align: left;
+    font-size: 20px;
+}
+
+#peserta-seminar{
+    text-align: center;
+    font-size: 30px;
+}
+
+legend.scheduler-border {
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+    
+}
+
+form{
+    padding-left: 15px;
+}
+
+/* background form */
+#daftarTA, #daftarSeminar{
+    background-color: lightblue;
+}
