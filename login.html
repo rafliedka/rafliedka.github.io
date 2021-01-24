@@ -69,12 +69,12 @@
           <div style="width:300px;height:240px;border:2px solid black">
           <h1 class="text-center">Login</h1>
             <form class="text-center">
-                <label>Username</label><br>
-                <input type="text"><br>
-                <label>Password</label><br>
-                <input type="password"><br>
+                <label for="username">Username</label><br>
+                <input type="text" name="username" id="username"><br>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password"><br>
                 <br>
-                <a class="btn btn-default" href="index-user.html" role="button">Login</a>
+                <button type="button" class="btn btn-default" onclick="masuk()">Masuk</button>
                 <a class="btn btn-default" href="" role="button">Sign-up</a>
             </form>
           </div>
@@ -96,5 +96,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="validation.js"></script>
   </body>
 </html>
